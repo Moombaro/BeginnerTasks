@@ -24,7 +24,7 @@ def Calculator():
     while True:
         try:
             print("This is a simple test calculator!")
-            print("Pleas choose your function:")
+            print("Please choose your function:")
             print("1. addition")
             print("2. subtraction")
             print("3. multiplication")
@@ -32,7 +32,7 @@ def Calculator():
             print("5. exponential")
             print("6. dividible /even<>odd")
             print("7. root")
-            userChoice = input("choose your number: ")
+            userChoice = input("Choose your number: ")
             x = float(input("First number: "))
             y = float(input("Second number: "))
 
@@ -52,9 +52,9 @@ def Calculator():
                 print(x, "^", y, "=", exponential(x, y))
             elif userChoice == "6":
                 if dividible(x, y) == 0:
-                    print(x, "is clearly dividible by ", y)
+                    print(x, "is evenly dividible by ", y)
                 else:
-                    print(x, "is not clearly dividible by ", y)
+                    print(x, "is not evenly dividible by ", y)
             elif userChoice == "7":
                 print("Root of ", x, "=", root(x))
                 print("Root of ", y, "=", root(y))
