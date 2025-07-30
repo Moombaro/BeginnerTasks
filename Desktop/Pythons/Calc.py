@@ -14,7 +14,7 @@ def division(x, y):
 def exponential(x, y):
     return x ** y
 def dividible(x, y):
-    return y % x
+    return x % y
 def root(x):
     return math.sqrt(x)
 def root(y):
@@ -38,7 +38,10 @@ def Calculator():
         elif userChoice == "exponential":
             print(x, "^", y, "=", exponential(x, y))
         elif userChoice == "dividible":
-            print(dividible(x, y))
+            if dividible(x, y) == 0:
+                print(x, "is clearly dividible by ", y)
+            else:
+                print(x, "is not clearly dividible by ", y)
         elif userChoice == "root":
             print("Root of ", x, "=", root(x))
             print("Root of ", y, "=", root(y))
