@@ -2,6 +2,6 @@ print("Object is to create a List 1 - 100, and replace multiples of 3 by 'Fizz',
 
 
 x = 1
-for myList in range(1,101):
+for myList in range(1, 101):
 
     print(myList)
