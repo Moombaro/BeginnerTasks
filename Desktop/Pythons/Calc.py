@@ -23,27 +23,39 @@ def root(y):
 def Calculator():
     while True:
         try:
+            print("This is a test calculator!")
+            print("Pleas choose your function:")
+            print("1. addition")
+            print("2. subtraction")
+            print("3. multiplication")
+            print("4. division")
+            print("5. exponential")
+            print("6. dividible /even<>odd")
+            print("7. root")
+            userChoice = input("choose your number: ")
             x = float(input("First number: "))
             y = float(input("Second number: "))
-            userChoice = str(input("What would you like to do (addtion, subtraction, multiplication, division, exponential, root or dividible)? "))
-        
 
-            if userChoice == "addition":
+         
+        
+            
+
+            if userChoice == "1":
                 print(x, "+", y, "=", addition(x, y))
-            elif userChoice == "subtraction":
+            elif userChoice == "2":
                 print(x, "-", y, "=", subtraction(x, y))
-            elif userChoice == "multiplication":
+            elif userChoice == "3":
                 print(x, "*", y, "=", multiplication(x, y))
-            elif userChoice == "division":
+            elif userChoice == "4":
                 print(x, "/", y, "=", division(x, y))
-            elif userChoice == "exponential":
+            elif userChoice == "5":
                 print(x, "^", y, "=", exponential(x, y))
-            elif userChoice == "dividible":
+            elif userChoice == "6":
                 if dividible(x, y) == 0:
                     print(x, "is clearly dividible by ", y)
                 else:
                     print(x, "is not clearly dividible by ", y)
-            elif userChoice == "root":
+            elif userChoice == "7":
                 print("Root of ", x, "=", root(x))
                 print("Root of ", y, "=", root(y))
             else:
@@ -55,6 +67,8 @@ def Calculator():
         if keep_going == "no":
             print("Have a nice day!")
             break 
+        
+
 
 
 
