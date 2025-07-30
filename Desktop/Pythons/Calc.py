@@ -19,7 +19,11 @@ def root(x):
     return math.sqrt(x)
 def root(y):
     return math.sqrt(y)
-
+def factor(x):
+    return math.factorial(int(x))
+def factor(y):
+    return math.factorial(int(y))
+                
 def Calculator():
     while True:
         try:
@@ -32,6 +36,7 @@ def Calculator():
             print("5. exponential")
             print("6. dividible /even<>odd")
             print("7. root")
+            print("8. factorial")
             userChoice = input("Choose your number: ")
             x = float(input("First number: "))
             y = float(input("Second number: "))
@@ -58,9 +63,13 @@ def Calculator():
             elif userChoice == "7":
                 print("Root of ", x, "=", root(x))
                 print("Root of ", y, "=", root(y))
+            elif userChoice == "8":
+                print("Factorial of", x, "=", factor(x))
+                print("Factorial of", y, "=", factor(y))
+
             else:
                 print("invalid order")
-        
+    
         
         except ValueError and ZeroDivisionError:
             return print("invalid input")
