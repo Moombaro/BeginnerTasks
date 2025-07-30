@@ -18,4 +18,14 @@ def Calculator():
         userReply == "div"
         print("The result is: {}".format(div))
 
+def Repeat():
+        userReply = input("Are you done? (yes/no): ")
+
+        if userReply == "no":
+            return Calculator()
+        else:
+            userReply == "yes"
+            print("Have a nice day!")
+
 Calculator()
+Repeat()
