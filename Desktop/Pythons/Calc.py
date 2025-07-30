@@ -23,7 +23,7 @@ def root(y):
 def Calculator():
     while True:
         try:
-            print("This is a test calculator!")
+            print("This is a simple test calculator!")
             print("Pleas choose your function:")
             print("1. addition")
             print("2. subtraction")
@@ -60,8 +60,11 @@ def Calculator():
                 print("Root of ", y, "=", root(y))
             else:
                 print("invalid order")
+        
+        
         except ValueError and ZeroDivisionError:
             return print("invalid input")
+        
         
         keep_going = input("do you want to continue? (yes/no) ")
         if keep_going == "no":
