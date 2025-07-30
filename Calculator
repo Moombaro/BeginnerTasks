@@ -1,2 +1,6 @@
 number1 = input("First Number: ")
 number2 = input("Second Number: ")
+add = (int(number1) + int(number2))
+sub = (int(number1) - int(number2))
+mult = (int(number1) * int(number2))
+div = (int(number1) / int(number2))
