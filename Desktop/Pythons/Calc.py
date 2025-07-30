@@ -23,6 +23,19 @@ def factor(x):
     return math.factorial(int(x))
 def factor(y):
     return math.factorial(int(y))
+def prime(x):
+    for i in range(2, int(x/2)):
+        if (x%i) == 0:
+            return False
+        else:
+            return True
+def prime(y):
+    for i in range(2, int(y/2)):
+        if (y%i) == 0:
+            return False
+        else:
+            return True
+
                 
 def Calculator():
     while True:
@@ -37,6 +50,7 @@ def Calculator():
             print("6. dividible /even<>odd")
             print("7. root")
             print("8. factorial")
+            print("9. check for prime")
             userChoice = input("Choose your number: ")
             x = float(input("First number: "))
             y = float(input("Second number: "))
@@ -66,7 +80,20 @@ def Calculator():
             elif userChoice == "8":
                 print("Factorial of", x, "=", factor(x))
                 print("Factorial of", y, "=", factor(y))
-
+            elif userChoice == "9":
+                if prime(x) == True:
+                    print("Number", x, "is a prime")
+                else:
+                    print("Number", x, "is no prime number")
+                if prime(y) == True:
+                    print("Number", y, "is a prime")
+                else:
+                    print("Number", y, "is no prime number")
+            
+            
+            
+            
+            
             else:
                 print("invalid order")
     
