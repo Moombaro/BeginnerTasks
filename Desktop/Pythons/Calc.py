@@ -24,14 +24,14 @@ def factor(x):
 def factor(y):
     return math.factorial(int(y))
 def prime(x):
-    for i in range(2, int(x/2)):
-        if (x%i) == 0:
+    for number in range(2, x):
+        if (x%number) == 0:
             return False
         else:
             return True
 def prime(y):
-    for i in range(2, int(y/2)):
-        if (y%i) == 0:
+    for number in range(2, y):
+        if (y%number) == 0:
             return False
         else:
             return True
