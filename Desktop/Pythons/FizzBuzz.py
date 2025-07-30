@@ -3,5 +3,11 @@ print("Object is to create a List 1 - 100, and replace multiples of 3 by 'Fizz',
 
 x = 1
 for myList in range(1, 101):
-
-    print(myList)
+    if myList % 15 == 0:
+        print("FizzBuzz")
+    elif myList % 5 == 0:
+        print("Buzz")
+    elif myList % 3 == 0:
+        print("Fizz")
+    else:
+        print(myList)
